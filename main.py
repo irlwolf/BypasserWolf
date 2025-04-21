@@ -27,9 +27,9 @@ with open("config.json", "r") as f:
 def getenv(var):
     return environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("TOKEN")
-api_hash = getenv("HASH")
-api_id = getenv("ID")
+bot_token = getenv("7865451604:AAENLJY8Lbn2cB61mcr6uqUd4CrlEM9WxX8")
+api_hash = getenv("81ca3df48f25d954b2ebef5aec715a73")
+api_id = getenv("23580732")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 with app:
     app.set_bot_commands(
@@ -40,9 +40,9 @@ with app:
     )
 
 # Database setup
-db_api = getenv("DB_API")
-db_owner = getenv("DB_OWNER")
-db_name = getenv("DB_NAME")
+db_api = getenv("jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+db_owner = getenv("irlwolf")
+db_name = getenv("irlwolf")
 try:
     database = DB(api_key=db_api, db_owner=db_owner, db_name=db_name)
 except:
